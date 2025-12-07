@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KindTalk – Friendly AI for elderly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+  <div class="app-header-main">
+    <h1>KindTalk</h1>
+    <p>Your warm AI companion</p>
+  </div>
+  <div class="app-header-actions">
+  <button id="big-mode-toggle" class="bigmode-btn">A+</button>
+  <button onclick="location.href='about.html'" class="about-btn">About Author</button>
+</div>
+
+
+</header>
+
+
+    <section class="intro">
+      <p>Welcome! This simple chat is here to keep you company, tell a joke, or just listen.</p>
+      <p>Type a message below and send.</p>
+    </section>
+
+    <section id="chat-box" class="chat-box" aria-label="Chat conversation">
+      <!-- Messages appear here -->
+    </section>
+
+    <div class="input-area">
+    <button type="button" id="voice-btn" class="voice-btn">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#ffffff">
+    <path d="M12 15q1.25 0 2.125-.875T15 12V6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6v6q0 1.25.875 2.125T12 15Zm-1 6v-3.1q-2.45-.35-4.225-2.225Q5 13.8 5 11h2q0 2.075 1.463 3.538Q9.925 16 12 16q2.075 0 3.538-1.462Q17 13.075 17 11h2q0 2.8-1.775 4.675T13 17.9V21Z"/>
+  </svg>
+</button>
+
+    <input id="user-input" type="text" placeholder="Say or type something..." autocomplete="off" />
+    <button type="submit" class="send-btn">➤</button>
+</div>
+<form id="chat-form" class="visually-hidden"></form>
+
+
+    <section class="tips">
+      <h2>Quick buttons</h2>
+      <div class="quick-buttons">
+        <button type="button" class="quick-btn" data-text="Tell me a joke.">Tell me a joke</button>
+        <button type="button" class="quick-btn" data-text="I feel lonely.">I feel lonely</button>
+        <button type="button" class="quick-btn" data-text="Give me some motivation.">Give me motivation</button>
+      </div>
+    </section>
+
+    <footer class="app-footer">
+      <p>Syrymov Dauren</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
